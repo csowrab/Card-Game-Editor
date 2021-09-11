@@ -22,7 +22,7 @@ texture = ExtResource( 1 )
 [node name="CardC1" type="StaticBody2D" parent="Board"]
 
 [node name="CardTran1" type="Area2D" parent="Board/CardC1"]
-position = Vector2( 439.297, 279.73 )
+position = Vector2( 439, 279.73 )
 scale = Vector2( 8, 8 )
 script = ExtResource( 5 )
 
@@ -37,7 +37,7 @@ script = ExtResource( 6 )
 [node name="CardC2" type="StaticBody2D" parent="Board"]
 
 [node name="CardTran2" type="Area2D" parent="Board/CardC2"]
-position = Vector2( 865.516, 279.73 )
+position = Vector2( 865, 279.73 )
 scale = Vector2( 8, 8 )
 script = ExtResource( 5 )
 
@@ -51,45 +51,183 @@ script = ExtResource( 6 )
 
 [node name="CardC1G1" type="StaticBody2D" parent="Board"]
 
-[node name="CardCover" type="Sprite" parent="Board/CardC1G1"]
-position = Vector2( 339.297, 519.73 )
-scale = Vector2( 0.3, 0.3 )
+[node name="CardTran2" type="Area2D" parent="Board/CardC1G1"]
+position = Vector2( 300, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC1G1/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC1G1/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
+script = ExtResource( 6 )
 
 [node name="CardC1G2" type="StaticBody2D" parent="Board"]
 
-[node name="CardCover" type="Sprite" parent="Board/CardC1G2"]
-position = Vector2( 439.297, 519.73 )
-scale = Vector2( 0.3, 0.3 )
+[node name="CardTran2" type="Area2D" parent="Board/CardC1G2"]
+position = Vector2( 350, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC1G2/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC1G2/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
+script = ExtResource( 6 )
 
 [node name="CardC1G3" type="StaticBody2D" parent="Board"]
 
-[node name="CardCover" type="Sprite" parent="Board/CardC1G3"]
-position = Vector2( 539.297, 519.73 )
-scale = Vector2( 0.3, 0.3 )
+[node name="CardTran2" type="Area2D" parent="Board/CardC1G3"]
+position = Vector2( 400, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC1G3/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC1G3/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
+script = ExtResource( 6 )
+
+[node name="CardC1G4" type="StaticBody2D" parent="Board"]
+
+[node name="CardTran2" type="Area2D" parent="Board/CardC1G4"]
+position = Vector2( 450, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC1G4/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC1G4/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+script = ExtResource( 6 )
+
+[node name="CardC1G5" type="StaticBody2D" parent="Board"]
+
+[node name="CardTran2" type="Area2D" parent="Board/CardC1G5"]
+position = Vector2( 500, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC1G5/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC1G5/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+script = ExtResource( 6 )
+
+[node name="CardC1G6" type="StaticBody2D" parent="Board"]
+
+[node name="CardTran2" type="Area2D" parent="Board/CardC1G6"]
+position = Vector2( 550, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC1G6/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC1G6/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+script = ExtResource( 6 )
 
 [node name="CardC2G1" type="StaticBody2D" parent="Board"]
 
-[node name="CardCover" type="Sprite" parent="Board/CardC2G1"]
-position = Vector2( 754.813, 519.957 )
-scale = Vector2( 0.3, 0.3 )
+[node name="CardTran2" type="Area2D" parent="Board/CardC2G1"]
+position = Vector2( 726, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC2G1/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC2G1/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
+script = ExtResource( 6 )
 
 [node name="CardC2G2" type="StaticBody2D" parent="Board"]
 
-[node name="CardCover" type="Sprite" parent="Board/CardC2G2"]
-position = Vector2( 854.813, 519.957 )
-scale = Vector2( 0.3, 0.3 )
+[node name="CardTran2" type="Area2D" parent="Board/CardC2G2"]
+position = Vector2( 776, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC2G2/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC2G2/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
+script = ExtResource( 6 )
 
 [node name="CardC2G3" type="StaticBody2D" parent="Board"]
 
-[node name="CardCover" type="Sprite" parent="Board/CardC2G3"]
-position = Vector2( 954.813, 519.957 )
-scale = Vector2( 0.3, 0.3 )
+[node name="CardTran2" type="Area2D" parent="Board/CardC2G3"]
+position = Vector2( 826, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC2G3/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC2G3/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
+script = ExtResource( 6 )
+
+[node name="CardC2G4" type="StaticBody2D" parent="Board"]
+
+[node name="CardTran2" type="Area2D" parent="Board/CardC2G4"]
+position = Vector2( 876, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC2G4/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC2G4/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+script = ExtResource( 6 )
+
+[node name="CardC2G5" type="StaticBody2D" parent="Board"]
+
+[node name="CardTran2" type="Area2D" parent="Board/CardC2G5"]
+position = Vector2( 926, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC2G5/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC2G5/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+script = ExtResource( 6 )
+
+[node name="CardC2G6" type="StaticBody2D" parent="Board"]
+
+[node name="CardTran2" type="Area2D" parent="Board/CardC2G6"]
+position = Vector2( 976, 500 )
+scale = Vector2( 2, 2 )
+script = ExtResource( 5 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Board/CardC2G6/CardTran2"]
+shape = SubResource( 1 )
+
+[node name="CardCover" type="Sprite" parent="Board/CardC2G6/CardTran2"]
+scale = Vector2( 0.1, 0.1 )
+texture = ExtResource( 2 )
+script = ExtResource( 6 )
 
 [node name="Button1" type="StaticBody2D" parent="."]
 
