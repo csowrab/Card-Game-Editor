@@ -250,12 +250,36 @@ position = Vector2( 580, 70 )
 scale = Vector2( 0.025, 0.1 )
 texture = ExtResource( 3 )
 
+[node name="Label" type="Label" parent="Display1"]
+margin_left = 570.0
+margin_top = 65.0
+margin_right = 610.0
+margin_bottom = 96.0
+rect_scale = Vector2( 3, 1 )
+text = "2
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Display2" type="StaticBody2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="Display2"]
 position = Vector2( 720, 70 )
 scale = Vector2( 0.025, 0.1 )
 texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Display2"]
+margin_left = 710.0
+margin_top = 65.0
+margin_right = 750.0
+margin_bottom = 96.0
+rect_scale = Vector2( 3, 1 )
+text = "1
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Display3" type="StaticBody2D" parent="."]
 
@@ -264,9 +288,33 @@ position = Vector2( 700, 180 )
 scale = Vector2( 0.025, 0.05 )
 texture = ExtResource( 3 )
 
+[node name="Label" type="Label" parent="Display3"]
+margin_left = 675.0
+margin_top = 175.0
+margin_right = 715.0
+margin_bottom = 206.0
+rect_scale = Vector2( 3, 1 )
+text = "10
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Display4" type="StaticBody2D" parent="."]
 
 [node name="Sprite" type="Sprite" parent="Display4"]
 position = Vector2( 600, 180 )
 scale = Vector2( 0.025, 0.05 )
 texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Display4"]
+margin_left = 575.0
+margin_top = 175.0
+margin_right = 615.0
+margin_bottom = 206.0
+rect_scale = Vector2( 3, 1 )
+text = "10
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
