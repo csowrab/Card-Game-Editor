@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Textures/Board.png" type="Texture" id=1]
 [ext_resource path="res://Textures/CardCover.png" type="Texture" id=2]
@@ -6,6 +6,7 @@
 [ext_resource path="res://Textures/RedButton.png" type="Texture" id=4]
 [ext_resource path="res://Area2D.gd" type="Script" id=5]
 [ext_resource path="res://CardCover.gd" type="Script" id=6]
+[ext_resource path="res://Node2D.gd" type="Script" id=7]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 14.5, 21 )
@@ -229,6 +230,85 @@ scale = Vector2( 0.1, 0.1 )
 texture = ExtResource( 2 )
 script = ExtResource( 6 )
 
+[node name="DisplaysNode" type="Node2D" parent="Board"]
+script = ExtResource( 7 )
+
+[node name="Display1" type="StaticBody2D" parent="Board/DisplaysNode"]
+
+[node name="Sprite" type="Sprite" parent="Board/DisplaysNode/Display1"]
+position = Vector2( 580, 70 )
+scale = Vector2( 0.025, 0.1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Board/DisplaysNode/Display1"]
+margin_left = 570.0
+margin_top = 65.0
+margin_right = 610.0
+margin_bottom = 96.0
+rect_scale = Vector2( 3, 1 )
+text = "2
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Display2" type="StaticBody2D" parent="Board/DisplaysNode"]
+
+[node name="Sprite" type="Sprite" parent="Board/DisplaysNode/Display2"]
+position = Vector2( 720, 70 )
+scale = Vector2( 0.025, 0.1 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Board/DisplaysNode/Display2"]
+margin_left = 710.0
+margin_top = 65.0
+margin_right = 750.0
+margin_bottom = 96.0
+rect_scale = Vector2( 3, 1 )
+text = "1
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Display3" type="StaticBody2D" parent="Board/DisplaysNode"]
+
+[node name="Sprite" type="Sprite" parent="Board/DisplaysNode/Display3"]
+position = Vector2( 700, 180 )
+scale = Vector2( 0.025, 0.05 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Board/DisplaysNode/Display3"]
+margin_left = 675.0
+margin_top = 175.0
+margin_right = 715.0
+margin_bottom = 206.0
+rect_scale = Vector2( 3, 1 )
+text = "10
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Display4" type="StaticBody2D" parent="Board/DisplaysNode"]
+
+[node name="Sprite" type="Sprite" parent="Board/DisplaysNode/Display4"]
+position = Vector2( 600, 180 )
+scale = Vector2( 0.025, 0.05 )
+texture = ExtResource( 3 )
+
+[node name="Label" type="Label" parent="Board/DisplaysNode/Display4"]
+margin_left = 575.0
+margin_top = 175.0
+margin_right = 615.0
+margin_bottom = 206.0
+rect_scale = Vector2( 3, 1 )
+text = "10
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="Button1" type="StaticBody2D" parent="."]
 
 [node name="RedButton" type="Sprite" parent="Button1"]
@@ -242,79 +322,3 @@ texture = ExtResource( 4 )
 position = Vector2( 250, 320.808 )
 scale = Vector2( 0.05, 0.2 )
 texture = ExtResource( 4 )
-
-[node name="Display1" type="StaticBody2D" parent="."]
-
-[node name="Sprite" type="Sprite" parent="Display1"]
-position = Vector2( 580, 70 )
-scale = Vector2( 0.025, 0.1 )
-texture = ExtResource( 3 )
-
-[node name="Label" type="Label" parent="Display1"]
-margin_left = 570.0
-margin_top = 65.0
-margin_right = 610.0
-margin_bottom = 96.0
-rect_scale = Vector2( 3, 1 )
-text = "2
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Display2" type="StaticBody2D" parent="."]
-
-[node name="Sprite" type="Sprite" parent="Display2"]
-position = Vector2( 720, 70 )
-scale = Vector2( 0.025, 0.1 )
-texture = ExtResource( 3 )
-
-[node name="Label" type="Label" parent="Display2"]
-margin_left = 710.0
-margin_top = 65.0
-margin_right = 750.0
-margin_bottom = 96.0
-rect_scale = Vector2( 3, 1 )
-text = "1
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Display3" type="StaticBody2D" parent="."]
-
-[node name="Sprite" type="Sprite" parent="Display3"]
-position = Vector2( 700, 180 )
-scale = Vector2( 0.025, 0.05 )
-texture = ExtResource( 3 )
-
-[node name="Label" type="Label" parent="Display3"]
-margin_left = 675.0
-margin_top = 175.0
-margin_right = 715.0
-margin_bottom = 206.0
-rect_scale = Vector2( 3, 1 )
-text = "10
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
-[node name="Display4" type="StaticBody2D" parent="."]
-
-[node name="Sprite" type="Sprite" parent="Display4"]
-position = Vector2( 600, 180 )
-scale = Vector2( 0.025, 0.05 )
-texture = ExtResource( 3 )
-
-[node name="Label" type="Label" parent="Display4"]
-margin_left = 575.0
-margin_top = 175.0
-margin_right = 615.0
-margin_bottom = 206.0
-rect_scale = Vector2( 3, 1 )
-text = "10
-"
-__meta__ = {
-"_edit_use_anchors_": false
-}
