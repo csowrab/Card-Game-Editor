@@ -274,15 +274,15 @@ __meta__ = {
 [node name="Display3" type="StaticBody2D" parent="Board/DisplaysNode"]
 
 [node name="Sprite" type="Sprite" parent="Board/DisplaysNode/Display3"]
-position = Vector2( 700, 180 )
+position = Vector2( 650, 160 )
 scale = Vector2( 0.025, 0.05 )
 texture = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="Board/DisplaysNode/Display3"]
-margin_left = 675.0
-margin_top = 175.0
-margin_right = 715.0
-margin_bottom = 206.0
+margin_left = 625.0
+margin_top = 155.0
+margin_right = 665.0
+margin_bottom = 186.0
 rect_scale = Vector2( 3, 1 )
 text = "10
 "
@@ -293,17 +293,17 @@ __meta__ = {
 [node name="Display4" type="StaticBody2D" parent="Board/DisplaysNode"]
 
 [node name="Sprite" type="Sprite" parent="Board/DisplaysNode/Display4"]
-position = Vector2( 600, 180 )
+position = Vector2( 650, 200 )
 scale = Vector2( 0.025, 0.05 )
 texture = ExtResource( 3 )
 
 [node name="Label" type="Label" parent="Board/DisplaysNode/Display4"]
-margin_left = 575.0
-margin_top = 175.0
-margin_right = 615.0
-margin_bottom = 206.0
+margin_left = 625.0
+margin_top = 195.0
+margin_right = 665.0
+margin_bottom = 226.0
 rect_scale = Vector2( 3, 1 )
-text = "10
+text = "<-
 "
 __meta__ = {
 "_edit_use_anchors_": false
